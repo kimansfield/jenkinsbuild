@@ -3,7 +3,7 @@
 
 void main(void) {
 
-  printf("Hello Jenkins!!!\n"); 1sadfasdfdsf
+  printf("Hello Jenkins!!!\n")
 
   return;
 }
