@@ -3,7 +3,8 @@ CFLAGS=-I.
 DEPS = ./
 
 %.o: %.c $(DEPS)
+	@echo $(CC) -c -o $@ $< $(CFLAGS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-hellomake: main.o 
-	gcc -o hellomake main.o -I.
+main: main.o 
+	gcc -o main main.o -I.
